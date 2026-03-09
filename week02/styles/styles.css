@@ -38,6 +38,11 @@ footer {
     text-align: center;
 }
 
+nav {
+    background-color: blue;
+    padding: 15px;
+}
+
 /* Optional navigation styling */
 nav ul {
     list-style: none;
