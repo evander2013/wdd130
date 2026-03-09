@@ -1,61 +1,59 @@
-/* Main content styles */
-main {
-    max-width: 800px;
-    margin: 0 auto; /* centers the main content */
+/* Navigation bar */
+nav {
+    background-color: steelblue;
+    padding: 10px;
 }
 
-/* Main images (profile) */
+/* Navigation links */
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+/* Main content */
+main {
+    max-width: 840px;
+}
+
+/* Main heading */
+h1 {
+    color: steelblue;
+}
+
+/* Profile image */
 main img {
     width: 150px;
-    height: auto; /* preserves aspect ratio */
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
-/* Paragraph adjustments */
+/* Aside section */
+aside {
+    width: 200px;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #eee;
+    color: #333;
+}
+
+/* Aside image */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Paragraphs */
 p {
     padding: 0;
 }
 
-/* Aside styles */
-aside {
-    width: 200px;
-    margin: 20px;
-    border: 2px solid #333;
-    padding: 10px;
-    background-color: #f0f0f0;
-    color: #000;
-}
-
-/* Aside images */
-aside img {
-    width: 100px;
-    height: auto; /* preserves aspect ratio */
-}
-
-/* Footer styles */
+/* Footer */
 footer {
-    margin-top: 20px;
-    border-top: 2px solid #333;
+    margin-top: 15px;
+    border-top: 1px solid #000;
     text-align: center;
-}
-
-nav {
-    background-color: blue;
-    padding: 15px;
-}
-
-/* Optional navigation styling */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
