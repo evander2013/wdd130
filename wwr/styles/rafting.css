@@ -1,0 +1,107 @@
+:root {
+  --primary-color: #1b4965;
+  --secondary-color: #62b6cb;
+  --accent1-color: #bee9e8;
+  --accent2-color: #5fa8d3;
+  --heading-font: Arial, sans-serif;
+  --body-font: Verdana, sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+/* Layout width */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+header nav{
+  display: flex;
+  flex-direction: column;
+}
+
+header nav a{
+  list-style: none;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Spacing */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Overlay title */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #000;
+}
+
+/* Article overlay */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+/* Article image */
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 10px;
+}
+
+.hero article p{
+  color: #000;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Remove underline from social icons */
+.socialmedia a {
+  text-decoration: none;
+}
+
+.header_img{
+  margin-top: 10px;
+}
