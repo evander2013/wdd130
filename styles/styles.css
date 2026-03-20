@@ -1,3 +1,10 @@
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 /* Navigation */
 nav {
   background-color: #333;
@@ -10,7 +17,7 @@ nav a {
   color: white;
   padding: 10px 20px;
   text-decoration: none;
-  display: block; /* fixed for audit */
+  display: block; /* REQUIRED for audit */
 }
 
 nav a:hover {
@@ -55,10 +62,10 @@ aside img {
 /* Text */
 p {
   line-height: 1.5;
-  padding: 0; /* fixed for audit */
+  padding: 0; /* REQUIRED for audit */
 }
 
-/* Lists */
+/* Lists (Week 2 requirement) */
 ul {
   list-style-type: circle;
   padding-left: 20px;
