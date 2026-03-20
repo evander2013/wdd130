@@ -17,76 +17,109 @@
 /* Body */
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);
+  color: var(--primary-color);
+  line-height: 1.6;
+  background-color: #f0f8ff;
 }
 
 /* Layout width */
 header, main, footer {
-  width: 840px;
+  max-width: 840px;
+  width: 90%;
   margin: 0 auto;
 }
 
-header nav{
+/* Header */
+header {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
 }
 
-header nav a{
-  list-style: none;
+header nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+header nav a.active {
+  color: var(--secondary-color);
 }
 
 /* Headings */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+  margin-bottom: 12px;
 }
 
-/* Spacing */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+/* Sections */
+section {
+  margin-bottom: 32px;
 }
 
-/* Hero section */
+section p {
+  margin: 12px 0;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
+  margin-bottom: 40px;
 }
 
 .hero img {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 500px;
+  object-fit: cover;
 }
 
-/* Overlay title */
 .hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
-  padding: 16px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #000;
 }
 
-/* Article overlay */
+.hero h1 span {
+  background-color: rgba(190,233,232,0.7);
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.9);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-/* Article image */
+.hero article::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .hero article img {
   float: right;
   width: 125px;
   margin-left: 10px;
 }
 
-.hero article p{
+.hero article p {
   color: #000;
 }
 
@@ -95,13 +128,33 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px 0;
+  border-top: 1px solid var(--primary-color);
 }
 
-/* Remove underline from social icons */
+footer p {
+  font-size: 0.9rem;
+}
+
 .socialmedia a {
   text-decoration: none;
 }
 
-.header_img{
-  margin-top: 10px;
+/* Responsive */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .hero img {
+    height: 300px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 }
