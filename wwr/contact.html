@@ -1,0 +1,123 @@
+<!--
+Creativity Feature:
+- Added adventure difficulty levels using fire icons
+- Added star ratings for each rafting experience
+- Included a tagline to improve user experience and visual design
+-->
+
+<<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description"
+            content="Contact White Water Rafting Co. for inquiries, reservations, or website suggestions.">
+        <meta name="author" content="Evander Sebastian Kalwanyi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us - White Water Rafting</title>
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+
+    <body>
+
+        <!-- Header and Navigation (same as other pages) -->
+        <header class="contact-header">
+            <img src="images/image.png" alt="Rafting Logo" class="header_img">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contact-info">
+                <h1>white water rafting company</h1>
+                <p>Reach out to us for any questions, reservations, or feedback!</p>
+                <p><strong>Address:</strong> 123 River Road, Adventure City</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+
+            </div>
+
+            <!-- Company Info -->
+            <section class="container">
+                <div class="contact-info">
+
+                    <div class="company-details">
+
+                        <!-- Embedded Google Map (remove style="border:0") -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.062315214888!2d-122.419415!3d37.774929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c0!2sAdventure%20City!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus"
+                            title="Company Location" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form action="#" method="post">
+                        <!-- Name and Email -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <!-- Purpose (radio buttons) -->
+                        <fieldset>
+                            <legend>Purpose of your message:</legend>
+                            <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                            <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                        </fieldset>
+
+                        <!-- Message -->
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <!-- Newsletter -->
+                        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly
+                            newsletter</label>
+
+                        <!-- Submit button -->
+                        <button type="submit">Submit Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Employee Profiles -->
+            <section class="employees">
+                <h2>Meet Our Team</h2>
+                <div class="employee-gallery">
+                    <figure>
+                        <img src="images/john.jpg" alt="John Doe">
+                        <figcaption>John Doe – Lead Guide</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/jane.jpg" alt="Jane Smith">
+                        <figcaption>Jane Smith – Safety Officer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/mike.jpg" alt="Mike Johnson">
+                        <figcaption>Mike Johnson – Adventure Coordinator</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer (same as other pages) -->
+        <footer class="footer-container">
+            <p>© 2026 White Water Rafting Co. | Evander Sebastian Kalwanyi</p>
+            <nav class="socialmedia">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            </nav>
+        </footer>
+
+    </body>
+
+    </html>
