@@ -304,7 +304,7 @@ main section {
 }
 
 body {
-    background-color: #48cae4;
+    background-color: #d9f2f9;
     font-family: "Raleway", "Roboto";
     font-size: 22px;
     margin: 0;
@@ -393,7 +393,7 @@ h4 {
 }
 
 footer {
-    background-color: var(--primary-color);
+    background-color: #006494;
     color: white;
     text-align: center;
     padding: 1rem;
